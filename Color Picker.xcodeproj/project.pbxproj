@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		03F274B2235121220033B1C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F274B1235121220033B1C3 /* AppDelegate.swift */; };
 		03F274B4235121220033B1C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F274B3235121220033B1C3 /* SceneDelegate.swift */; };
-		03F274B6235121220033B1C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F274B5235121220033B1C3 /* ViewController.swift */; };
 		03F274B9235121220033B1C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F274B7235121220033B1C3 /* Main.storyboard */; };
 		03F274BC235121220033B1C3 /* Color_Picker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03F274BA235121220033B1C3 /* Color_Picker.xcdatamodeld */; };
 		03F274BE235121240033B1C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F274BD235121240033B1C3 /* Assets.xcassets */; };
 		03F274C1235121240033B1C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F274BF235121240033B1C3 /* LaunchScreen.storyboard */; };
 		03F274CC235121240033B1C3 /* Color_PickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F274CB235121240033B1C3 /* Color_PickerUITests.swift */; };
+		03F274D9235133CF0033B1C3 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F274D8235133CF0033B1C3 /* ColorPickerViewController.swift */; };
+		03F274DB235137A70033B1C3 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F274DA235137A70033B1C3 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,6 @@
 		03F274AE235121220033B1C3 /* Color Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F274B1235121220033B1C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F274B3235121220033B1C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03F274B5235121220033B1C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03F274B8235121220033B1C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03F274BB235121220033B1C3 /* Color_Picker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Color_Picker.xcdatamodel; sourceTree = "<group>"; };
 		03F274BD235121240033B1C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		03F274C7235121240033B1C3 /* Color PickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color PickerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F274CB235121240033B1C3 /* Color_PickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_PickerUITests.swift; sourceTree = "<group>"; };
 		03F274CD235121240033B1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F274D8235133CF0033B1C3 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		03F274DA235137A70033B1C3 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +85,13 @@
 			children = (
 				03F274B1235121220033B1C3 /* AppDelegate.swift */,
 				03F274B3235121220033B1C3 /* SceneDelegate.swift */,
-				03F274B5235121220033B1C3 /* ViewController.swift */,
 				03F274B7235121220033B1C3 /* Main.storyboard */,
 				03F274BD235121240033B1C3 /* Assets.xcassets */,
 				03F274BF235121240033B1C3 /* LaunchScreen.storyboard */,
 				03F274C2235121240033B1C3 /* Info.plist */,
 				03F274BA235121220033B1C3 /* Color_Picker.xcdatamodeld */,
+				03F274D8235133CF0033B1C3 /* ColorPickerViewController.swift */,
+				03F274DA235137A70033B1C3 /* Color.swift */,
 			);
 			path = "Color Picker";
 			sourceTree = "<group>";
@@ -203,9 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03F274B6235121220033B1C3 /* ViewController.swift in Sources */,
 				03F274BC235121220033B1C3 /* Color_Picker.xcdatamodeld in Sources */,
 				03F274B2235121220033B1C3 /* AppDelegate.swift in Sources */,
+				03F274D9235133CF0033B1C3 /* ColorPickerViewController.swift in Sources */,
+				03F274DB235137A70033B1C3 /* Color.swift in Sources */,
 				03F274B4235121220033B1C3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
